@@ -1,0 +1,4 @@
+<md-checkbox #showMesg value="" [checked]="isChecked" (change)="onChange($event)" >Show/Hide</md-checkbox>
+<br><br>
+
+<div *ngIf="showMesg.checked"> Angular material is awesome!! </div>

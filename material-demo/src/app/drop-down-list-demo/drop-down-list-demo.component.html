@@ -1,0 +1,4 @@
+
+<md-select placeholder="Favourite Food" [(ngModel)]="food">  
+  <md-option *ngFor="let food of foods" [value]="food.id" >{{food.name}}</md-option>
+</md-select>

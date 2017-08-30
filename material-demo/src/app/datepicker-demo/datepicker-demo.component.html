@@ -1,0 +1,9 @@
+<md-input-container>
+   <input 
+          (focus)="birthdate.open()"
+          [min]="minDate" 
+          [max]="maxDate" 
+          type="text" mdInput [mdDatepicker]="birthdate">
+   <button mdSuffix [mdDatepickerToggle]="birthdate"></button>
+</md-input-container>
+<md-datepicker #birthdate touchUi="true"></md-datepicker>

@@ -1,0 +1,11 @@
+<md-input-container>
+  <input ngModel 
+         #foodname="ngModel"    
+         name="foodname" type="text" mdInput placeholder="Favourite Food" required>
+  <md-hint>Type your favourite food</md-hint>
+  <span mdSuffix>@willistowerswatson.com</span>
+  <span mdPrefix>admin.</span>
+  <md-error *ngIf="foodname.invalid && foodname.errors.required">
+    username field is required
+  </md-error>
+</md-input-container>
